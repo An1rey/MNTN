@@ -84,6 +84,7 @@ header :last-of-type a{
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-bottom: 843px;
 }
 .section_main__central_container{
   max-width: 950px;
@@ -123,6 +124,10 @@ content: "";
   margin-top: 32px;
   padding-right: 32px;
   position: relative;
+  transition: transform 0.2s;
+}
+.scroll:hover{
+  transform:translateY(-15%) ;
 }
 .scroll::after{
   content: "";
@@ -135,5 +140,90 @@ content: "";
   height: 24px;
   color: #FFFFFF;
   background-image: url("./images/./icon/./boottom.svg");
+}
+.container{
+  max-width: 1492px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-text{
+  padding-left: 150px;
+  max-width: 782px;
+  position: relative;
+}
+.article-text::before{
+  position: absolute;
+  left:0;
+  right: 0;
+  top:0;
+  transform:translateY(-55%);
+  content: attr(data-number);
+  display: block;
+  width: 240px;
+  height: 240px;
+  font:240px/1 'Gilroy';
+  color: #ffe7e7;
+  opacity: 0.1;
+}
+  .article-subtitle{
+    font: 18px/22px 'Gilroy';
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+    padding-left: 104px;
+    position: relative;
+    margin-bottom: 32px;
+  }
+  .article-subtitle::before{
+    content: "";
+    left: 0;
+    width:72px;
+    height:2px;
+    top:50%;
+    transform: translateY(-50%);
+    background-color: #FBD784;
+    display: block;
+    position: absolute;
+  }
+.article-title{
+font:64px/77px 'Playfair Display';
+  color: #FFFFFF;
+  margin-bottom: 27px;
+}
+.container p{
+  font:18px/1.78 'Playfair Display';
+  color: #FFFFFF;
+  margin-bottom: 27px;
+}
+.article-read {
+  display: inline-block;
+  font:18px/32px 'Gilroy';
+  color: #FBD784;
+  margin-top: 32px;
+  padding-right: 40px;
+  position: relative;
+  transition: transform 0.2s;
+}
+.scroll:hover{
+  transform:translateY(-15%) ;
+}
+.article-read::after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top:50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 16px;
+  color: #FFFFFF;
+  background-image: url("./images/./icon/right.svg");
 }
 
