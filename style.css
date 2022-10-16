@@ -130,6 +130,9 @@ header :last-of-type a {
   color: #FFFFFF;
   background-image: url("./images/./icon/./boottom.svg"); }
 
+main {
+  margin-top: -200px; }
+
 .container {
   max-width: 1492px;
   padding-left: 15px;
@@ -138,9 +141,13 @@ header :last-of-type a {
   margin-right: auto; }
 
 .article {
+  margin-top: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
+
+.article:nth-child(even) {
+  flex-direction: row-reverse; }
 
 .article-text {
   padding-left: 150px;
@@ -152,7 +159,7 @@ header :last-of-type a {
   left: 0;
   right: 0;
   top: 0;
-  transform: translateY(-55%);
+  transform: translateY(-50%);
   content: attr(data-number);
   display: block;
   width: 240px;
@@ -181,7 +188,7 @@ header :last-of-type a {
   display: block;
   position: absolute; }
 
-.article-title {
+.container h2 {
   font: 64px/77px 'Playfair Display';
   color: #FFFFFF;
   margin-bottom: 27px; }
@@ -214,5 +221,42 @@ header :last-of-type a {
   height: 16px;
   color: #FFFFFF;
   background-image: url("./images/./icon/right.svg"); }
+
+footer {
+  padding-bottom: 120px;
+  padding-top: 200px;
+  padding-left: 24px; }
+
+.footer_container {
+  max-width: 1462px;
+  display: flex;
+  justify-content: space-between; }
+
+footer h3 {
+  font: 18px/22px 'Gilroy';
+  color: #FFFFFF;
+  max-width: 300px;
+  padding-bottom: 120px;
+  padding-top: 20px; }
+
+footer p {
+  font: 18px/22px 'Gilroy';
+  color: #FFFFFF; }
+
+.footer-nav h4 {
+  font: 24px/32px 'Gilroy';
+  color: #FBD784;
+  padding-bottom: 24px; }
+
+.footer-nav ul a {
+  font: 18px/32px 'Gilroy';
+  color: #FFFFFF;
+  text-decoration: none; }
+
+.footer-nav li:hover {
+  transform: scale(1.05); }
+
+.footer-nav ul li:hover a {
+  color: #FBD784; }
 
 /*# sourceMappingURL=style.css.map */
