@@ -259,4 +259,7 @@ footer p {
 .footer-nav ul li:hover a {
   color: #FBD784; }
 
+.footer-nav ul li {
+  list-style: none; }
+
 /*# sourceMappingURL=style.css.map */
